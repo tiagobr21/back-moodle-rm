@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Http;
 class ApiRmController extends Controller{    
  
      public function index(){
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
         @set_time_limit(1800);
         error_reporting(1);
  
@@ -23,7 +25,7 @@ class ApiRmController extends Controller{
        
         //parametros a ser passado ao webservice
         $param_getUsers=array();
-        $param_getUsers['wstoken']="b64eb1b5fb4ecdfe05014ddd679c7362"; //token de acesso ao webservice
+        $param_getUsers['wstoken']="1ee4281fb0f7855b7a139e0e989f9da1"; //token de acesso ao webservice
         $param_getUsers['wsfunction']="core_user_get_users";
        
         //filtro de usuário
@@ -45,7 +47,8 @@ class ApiRmController extends Controller{
         $response_getUserss = json_decode( $result_getUser,true); 
          
         $response_getUsers = $response_getUserss['users'];
-    
+         
+
      /////////////////////////////////////////////////////////////////////////////////////////////////////
 
      //Api do RM
@@ -93,9 +96,7 @@ class ApiRmController extends Controller{
         $response_rm = json_decode($json,true);
        
         $response_rms = $response_rm['SCONSULTARAPIDAALUNOSECRETARIA'];
-        ;
-
-        exit;
+      
         /*    echo '<pre>';
             var_dump( $response_rms);
             echo '<pre>';
@@ -124,7 +125,7 @@ class ApiRmController extends Controller{
                 $novos .= $RA.' ';
                 
                 $param_createUser=array();
-                $param_createUser['wstoken']="b64eb1b5fb4ecdfe05014ddd679c7362"; //token de acesso ao webservice
+                $param_createUser['wstoken']="1ee4281fb0f7855b7a139e0e989f9da1"; //token de acesso ao webservice
                 $param_createUser['wsfunction']="core_user_create_users";
                         
                 // $value_rm = $response_rms[$key];
