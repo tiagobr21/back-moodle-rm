@@ -14,12 +14,12 @@ class ApiMoodleController extends Controller {
       
       //OBTER OS IDS
 
-      $remotemoodle="localhost/moodle"; //MOODLE_URL - endereço do Moodle
-      $url=$remotemoodle . '/webservice/restjson/server.php';
+      $remotemoodle="localhost:9090/moodle"; //MOODLE_URL - endereço do Moodle
+      $url=$remotemoodle . '/webservice/rest/server.php';
      
       //parametros a ser passado ao webservice
       $param_getUser=array();
-      $param_getUser['wstoken']="b64eb1b5fb4ecdfe05014ddd679c7362"; //token de acesso ao webservice
+      $param_getUser['wstoken']="9d9da5b8866e17a91ccd5987b92b24b5"; //token de acesso ao webservice
       $param_getUser['wsfunction']="core_user_get_users";
      
       //filtro de usuário
@@ -36,13 +36,9 @@ class ApiMoodleController extends Controller {
       curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       $result_getUser = curl_exec($ch);
-       //$result =json_decode($result);
      
-      $response_getUsers = json_decode( $result_getUser,true); 
-       
-      $response_getUsers = $response_getUsers['users'];
-
-      $userId = array_column($response_getUsers,"id");
+      dd($result_getUser);
+      exit 
 
       
 
@@ -77,7 +73,7 @@ class ApiMoodleController extends Controller {
       $response_getGrades = json_decode( $result_getGrade,true); 
        
    
-      exit;
+
 
     function array_to_xml( $response_getGrades, $xml = null ) {
         if ( is_array( $response_getGrades ) ) {

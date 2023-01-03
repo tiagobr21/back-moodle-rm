@@ -16,8 +16,11 @@ Route::get('/',function(){
    return view('welcome');
 });
 
-Route::get('/apirm',[App\Http\Controllers\ApiRmController::class,'index']);
+Route::get('/cadastrar',[App\Http\Controllers\ApiRmController::class,'cadastrar']);
 
+Route::get('/consultar',[App\Http\Controllers\ConsultarAlunos::class,'consultar']);
+
+Route::get('/excluir/{id}',[App\Http\Controllers\ConsultarAlunos::class,'excluir']);
 
 Route::get('/apimoodle',[App\Http\Controllers\ApiMoodleController::class,'mood']);
 

@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Http;
 
 class ApiRmController extends Controller{    
  
-     public function index(){
+     public function cadastrar(){
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
         @set_time_limit(1800);
@@ -20,112 +20,121 @@ class ApiRmController extends Controller{
 // CADASTRAR UM USUÁRIO DO RM NO MOODLE | VERIFICAR SE O USUÁRIO DO RM EXISTE NO MOODLE 
 
 //Api Moodle
-        $remotemoodle="localhost/moodle"; //MOODLE_URL - endereço do Moodle
-        $url=$remotemoodle . '/webservice/restjson/server.php';
+
+        $remotemoodle="http://localhost:9090/moodle"; //MOODLE_URL - endereço do Moodle
+        $url=$remotemoodle . '/webservice/restjson/server.php?';
        
         //parametros a ser passado ao webservice
-        $param_getUsers=array();
-        $param_getUsers['wstoken']="1ee4281fb0f7855b7a139e0e989f9da1"; //token de acesso ao webservice
-        $param_getUsers['wsfunction']="core_user_get_users";
+        $param =array();
+        $param ['wstoken']="408f6663a10bc617b89e1c07a65322e0"; //token de acesso ao webservice
+        $param ['wsfunction']="core_user_get_users";
        
         //filtro de usuário
-        $param_getUsers['criteria'][0]['key']='';
-        $param_getUsers['criteria'][0]['value']='';
+        $param ['criteria'][0]['key']='';
+        $param ['criteria'][0]['value']='';
        
         //converter array para json
-        $paramjson_get = json_encode( $param_getUsers);
-        
+        $paramjson = json_encode( $param );
+       
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, 0);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjson_get);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjson);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $result_getUser = curl_exec($ch);
-         //$result =json_decode($result);
-       
-        $response_getUserss = json_decode( $result_getUser,true); 
-         
-        $response_getUsers = $response_getUserss['users'];
-         
+        $result = curl_exec($ch);
+   
+        $response = json_decode( $result,true); 
+        
+        $response_mdl = $response['users'];
 
+    
      /////////////////////////////////////////////////////////////////////////////////////////////////////
 
      //Api do RM
  
-        $WsdlRM = ('https://teste.portaledu.com.br/TOTVSBusinessConnect/wsDataServer.asmx?wsdl');
-       
-        
-        $soapParams = array(
-            "login" => "moodle_rm",
-            "password" => "Bondade23!",
-            "authentication" => SOAP_AUTHENTICATION_BASIC,
-            "trace" => 1,
-            "exceptions" => 0
+        $WSDL= ('https://h-tbc.fametro.edu.br/wsdataserver/MEX?wsdl');
+ 
+        $ParametrosAutenticarSoap = array(
+            'cache_wsdl' => WSDL_CACHE_NONE,
+            'soap_version' => SOAP_1_1,
+            'style' => SOAP_RPC,
+            'use' => SOAP_ENCODED,
+            'login' => 'diploma',
+            'password' => 'F@m3tr022',
+            'authentication' => SOAP_AUTHENTICATION_BASIC,
+            'trace' => 1,
+            'exceptions' => 1,
+            'stream_context' => stream_context_create(array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'crypto_method' => STREAM_CRYPTO_METHOD_TLS_CLIENT,
+            )
+            ))
         );
-        //EduConsultaRapidaAlunoSecretariaData
+
         $RealizarConsultaSql = array(
             "DataServerName"=>"EduConsultaRapidaAlunoSecretariaData",
             "Filtro"=>"1=1",
             "Contexto"=>"CODCOLIGADA=1",
-            "Usuario"=>"moodle_rm",
-            "Senha"=>"Bondade23!"
+    
         );
         
-        $client = new \SoapClient($WsdlRM, $soapParams);
-        $result = $client->ReadViewAuth($RealizarConsultaSql);
-        $code_response = http_response_code();
-         
-
+  
+        $ClientSoap = new \SoapClient($WSDL, $ParametrosAutenticarSoap);
+       
+        $result = $ClientSoap->ReadView($RealizarConsultaSql);
+   
         $result_rm = json_decode(json_encode($result),true);
+  
+
         $separaAlunos = implode('-', $result_rm);
         $aluno = explode(", ",$separaAlunos);
       
+ 
         $alunos = str_replace("\n","",$aluno);
-        
-        
-         $string = <<<XML
-         <?xml version='1.0' encoding='utf-8'?>$alunos[0]
-         XML;
-         $xml = simplexml_load_string($string);
-        
+
+
+                
+        $string = <<<XML
+        <?xml version='1.0' encoding='utf-8'?>$alunos[0]
+        XML;
+        $xml = simplexml_load_string($string);
+     
+  
 
         $json = json_encode($xml,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); // converte a string XML  para JSON 
-    
 
         $response_rm = json_decode($json,true);
-       
-        $response_rms = $response_rm['SCONSULTARAPIDAALUNOSECRETARIA'];
+
+        $response_rm = $response_rm['SCONSULTARAPIDAALUNOSECRETARIA'];
       
-        /*    echo '<pre>';
-            var_dump( $response_rms);
-            echo '<pre>';
-            exit;     
-  */
+   
         /////////////////////////////////////////////////////////////////////////
 
-        $novos = '';
+          $novos = '';
 
      
-        foreach($response_rms as $value_rm){
+          foreach($response_rm as $value_rm){
             
             $RA = $value_rm["RA"];
 
-            $columns = array_column($response_getUsers,"username");
+            $columns = array_column($response_mdl,"username");
 
              $key = array_search($RA,$columns);
             
 
             if($key){
-                echo('O usuário '.$RA.' já existe');
-                echo '<br>';
+        /*         echo('O usuário '.$RA.' já existe');
+                echo '<br>'; */
             
             }else{
                  
                 $novos .= $RA.' ';
                 
                 $param_createUser=array();
-                $param_createUser['wstoken']="1ee4281fb0f7855b7a139e0e989f9da1"; //token de acesso ao webservice
+                $param_createUser['wstoken']="408f6663a10bc617b89e1c07a65322e0"; //token de acesso ao webservice
                 $param_createUser['wsfunction']="core_user_create_users";
                         
                 // $value_rm = $response_rms[$key];
@@ -171,10 +180,10 @@ class ApiRmController extends Controller{
                         
                 $response_createUser = json_decode($result_createUser,true);  
                 
-                echo('O usuário '.$RA.' criado ');
-                echo '<br>';
+            /*     echo('O usuário '.$RA.' criado ');
+                echo '<br>'; */
             }    
-        }   
+        }    
     }
 }
 
