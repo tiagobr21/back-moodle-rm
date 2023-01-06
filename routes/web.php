@@ -18,12 +18,11 @@ Route::get('/',function(){
 
 Route::get('/cadastrar',[App\Http\Controllers\ApiRmController::class,'cadastrar']);
 
-Route::get('/consultar',[App\Http\Controllers\ConsultarAlunos::class,'consultar']);
+Route::get('/consultar',[App\Http\Controllers\ApiRmController::class,'consultar']);
 
-Route::get('/excluir/{id}',[App\Http\Controllers\ConsultarAlunos::class,'excluir']);
+Route::get('/excluir/{id}',[App\Http\Controllers\ApiRmController::class,'excluir']);
 
-Route::get('/apimoodle',[App\Http\Controllers\ApiMoodleController::class,'mood']);
-
+Route::get('/criarcurso',[App\Http\Controllers\ApiRmController::class,'criarcurso']);
 
 Route::get('/grades',[App\Http\Controllers\GradesMoodleRm::class,'sendGrades']);
 

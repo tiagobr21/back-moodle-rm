@@ -1,0 +1,8 @@
+Array
+{Email Inválido: pcbalieiro@gmail.com+"}
+Array
+{Email Inválido: amaral_juliane@hotmail.com+"}
+Array
+{Email Inválido: \u00a0rogerio_fametro@yahoo.com"}
+Array
+Usuário criado:{"id":4617,"username":"1902498"}

@@ -13,12 +13,12 @@ class GradesMoodleRm extends Controller
    
      //OBTER OS IDS
 
-      $remotemoodle="localhost/moodle"; //MOODLE_URL - endereço do Moodle
-      $url=$remotemoodle . '/webservice/restjson/server.php';
+      $remotemoodle="http://localhost:9090/moodle"; //MOODLE_URL - endereço do Moodle
+      $url=$remotemoodle . '/webservice/restjson/server.php?';
      
       //parametros a ser passado ao webservice
       $param_getUser=array();
-      $param_getUser['wstoken']="b64eb1b5fb4ecdfe05014ddd679c7362"; //token de acesso ao webservice
+      $param_getUser['wstoken']="408f6663a10bc617b89e1c07a65322e0"; //token de acesso ao webservice
       $param_getUser['wsfunction']="core_user_get_users";
      
       //filtro de usuário
@@ -41,13 +41,14 @@ class GradesMoodleRm extends Controller
        
       $response_getUsers = $response_getUsers['users'];
 
-      $userId = array_column($response_getUsers,"id");
-      $userUserName = array_column($response_getUsers,"username");
+      // $userId = array_column($response_getUsers,"id");
+      // $userUserName = array_column($response_getUsers,"username");
       
-      unset($userId[0],$userId[1]);
-      unset($userUserName[0],$userUserName[1]);
+      // unset($userId[0],$userId[1]);
+      // unset($userUserName[0],$userUserName[1]);
 
-
+      dd($response_getUsers);
+      exit;
       
 
 
