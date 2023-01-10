@@ -1,0 +1,6 @@
+Array
+{"exception":"invalid_parameter_exception","errorcode":"invalidparameter","message":"Valor inv\u00e1lido de par\u00e2metro detectado"}
+Array
+{"exception":"invalid_parameter_exception","errorcode":"invalidparameter","message":"Valor inv\u00e1lido de par\u00e2metro detectado"}
+Array
+{"exception":"invalid_parameter_exception","errorcode":"invalidparameter","message":"Valor inv\u00e1lido de par\u00e2metro detectado"}
