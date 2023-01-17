@@ -106,7 +106,7 @@ class ApiRmController extends Controller{
         $response_rm = json_decode($json,true);
 
         $response_rm = $response_rm['SCONSULTARAPIDAALUNOSECRETARIA'];
-      
+         
 
         /////////////////////////////////////////////////////////////////////////
 
@@ -135,7 +135,6 @@ class ApiRmController extends Controller{
                 $param_createUser['wstoken']="4f92db8681694f63fae899d38dfba2c6"; //token de acesso ao webservice
                 $param_createUser['wsfunction']="core_user_create_users";
                         
-        
                 $param_createUser['users'][0]['createpassword']='1';
                 $param_createUser['users'][0]['username']=$value_rm["RA"];
                 $nome_completo = $param_createUser['users'][0]['firstname']= $value_rm["NOME"];
@@ -210,7 +209,6 @@ class ApiRmController extends Controller{
                 return response()->json('Todos os usuários cadastrados com sucesso',200);
              }
 
-            // header("Refresh: 100");
           http_response_code(200);
           return $response;
              
@@ -218,6 +216,7 @@ class ApiRmController extends Controller{
 
 
     public function consultar(){
+        
         header("Access-Control-Allow-Origin: *");
         header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
         @set_time_limit(1800);
@@ -296,8 +295,30 @@ public function criarcurso(){
      header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
      @set_time_limit(1800);
      error_reporting(1);
-       
-     $WSDL= ('https://h-tbc.fametro.edu.br/wsdataserver/MEX?wsdl');
+      
+     $url = 'https://h-tbc.fametro.edu.br/rmsrestdataserver/rest/EduCursoData';
+     
+     $authHeaders = array(
+        'login' => 'thiago.souzaa',
+        'password' => 'Bondade07!'
+     );
+     $authHeaders[] = 'Authorization:Basic dGhpYWdvLnNvdXphYTpCb25kYWRlMDch';
+        
+     $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, $url);
+     curl_setopt($ch, CURLOPT_POST, 0);
+     curl_setopt($ch, CURLOPT_HTTPHEADER, $authHeaders);
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+     $result = curl_exec($ch);
+
+     $response = json_decode($result,true);
+     
+     echo '<pre>';
+     print_r($response);
+     echo '</pre>';
+
+
+/*      $WSDL= ('https://h-tbc.fametro.edu.br/wsdataserver/MEX?wsdl');
  
      $ParametrosAutenticarSoap = array(
          'cache_wsdl' => WSDL_CACHE_NONE,
@@ -320,7 +341,7 @@ public function criarcurso(){
 
      $RealizarConsultaSql = array(
          "DataServerName"=>"EduCursoData",
-         "Filtro"=>"1=1",
+         "Filtro"=>"ADM01",
          "Contexto"=>"CODCOLIGADA=1",
  
      );
@@ -343,8 +364,10 @@ public function criarcurso(){
     
      $response_rm = json_decode($json,true);
   
-     $cursosrm = $response_rm['SCurso'];
+     $cursosrm = $response_rm['SCurso']; 
     
+     dd($cursosrm);
+     exit;
 
      /////////////////////////////////////////////////
      foreach ($cursosrm as $key => $value) {
@@ -424,12 +447,11 @@ public function criarcurso(){
        
             return $response;
         }    
+        */
      }     
-
-
+    }
   
 
 
  
-
 

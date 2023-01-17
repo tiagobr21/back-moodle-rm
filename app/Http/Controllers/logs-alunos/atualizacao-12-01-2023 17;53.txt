@@ -1,0 +1,1000 @@
+Array
+Usuário criado:{"id":1597,"username":"0216421"}
+Array
+Usuário criado:{"id":1598,"username":"1806942"}
+Array
+Usuário criado:{"id":1599,"username":"0255617"}
+Array
+Usuário criado:{"id":1600,"username":"0261118"}
+Array
+Usuário criado:{"id":1601,"username":"0293139"}
+Array
+Usuário criado:{"id":1602,"username":"0343225"}
+Array
+Usuário criado:{"id":1603,"username":"0376365"}
+Array
+Usuário criado:{"id":1604,"username":"0407686"}
+Array
+Usuário criado:{"id":1605,"username":"0446974"}
+Array
+Usuário criado:{"id":1606,"username":"0501661"}
+Array
+Usuário criado:{"id":1607,"username":"1807620"}
+Array
+Usuário criado:{"id":1608,"username":"1808329"}
+Array
+Usuário criado:{"id":1609,"username":"2017120"}
+Array
+Usuário criado:{"id":1610,"username":"2142685"}
+Array
+Usuário criado:{"id":1611,"username":"2262462"}
+Array
+Usuário criado:{"id":1612,"username":"0512997"}
+Array
+Usuário criado:{"id":1613,"username":"1702719"}
+Array
+Usuário criado:{"id":1614,"username":"0374530"}
+Array
+Usuário criado:{"id":1615,"username":"1903614"}
+Array
+Usuário criado:{"id":1616,"username":"0272067"}
+Array
+Usuário criado:{"id":1617,"username":"0373598"}
+Array
+Usuário criado:{"id":1618,"username":"1805840"}
+Array
+Usuário criado:{"id":1619,"username":"1905651"}
+Array
+Usuário criado:{"id":1620,"username":"0190176"}
+Array
+Usuário criado:{"id":1621,"username":"0198118"}
+Array
+Usuário criado:{"id":1622,"username":"0207298"}
+Array
+Usuário criado:{"id":1623,"username":"0235345"}
+Array
+Usuário criado:{"id":1624,"username":"0252212"}
+Array
+Usuário criado:{"id":1625,"username":"0297209"}
+Array
+Usuário criado:{"id":1626,"username":"0300573"}
+Array
+Usuário criado:{"id":1627,"username":"0344830"}
+Array
+Usuário criado:{"id":1628,"username":"0524338"}
+Array
+Usuário criado:{"id":1629,"username":"2132574"}
+Array
+Usuário criado:{"id":1630,"username":"2136208"}
+Array
+Usuário criado:{"id":1631,"username":"2137011"}
+Array
+Usuário criado:{"id":1632,"username":"0220248"}
+Array
+Usuário criado:{"id":1633,"username":"1807031"}
+Array
+Usuário criado:{"id":1634,"username":"1905537"}
+Array
+Usuário criado:{"id":1635,"username":"1906527"}
+Array
+Usuário criado:{"id":1636,"username":"1906818"}
+Array
+Usuário criado:{"id":1637,"username":"1907086"}
+Array
+Usuário criado:{"id":1638,"username":"1907544"}
+Array
+Usuário criado:{"id":1639,"username":"1907935"}
+Array
+Usuário criado:{"id":1640,"username":"1911174"}
+Array
+Usuário criado:{"id":1641,"username":"0018101"}
+Array
+Usuário criado:{"id":1642,"username":"0158679"}
+Array
+Usuário criado:{"id":1643,"username":"0183672"}
+Array
+Usuário criado:{"id":1644,"username":"0380315"}
+Array
+Usuário criado:{"id":1645,"username":"0420941"}
+Array
+Usuário criado:{"id":1646,"username":"1900038"}
+Array
+Usuário criado:{"id":1647,"username":"1901625"}
+Array
+Usuário criado:{"id":1648,"username":"1925761"}
+Array
+Usuário criado:{"id":1649,"username":"1929171"}
+Array
+Usuário criado:{"id":1650,"username":"1929272"}
+Array
+Usuário criado:{"id":1651,"username":"1929276"}
+Array
+Usuário criado:{"id":1652,"username":"2136140"}
+Array
+Usuário criado:{"id":1653,"username":"1807148"}
+Array
+Usuário criado:{"id":1654,"username":"1905382"}
+Array
+Usuário criado:{"id":1655,"username":"0314442"}
+Array
+Usuário criado:{"id":1656,"username":"0574344"}
+Array
+Usuário criado:{"id":1657,"username":"0349841"}
+Array
+Usuário criado:{"id":1658,"username":"0369151"}
+Array
+Usuário criado:{"id":1659,"username":"0329401"}
+Array
+Usuário criado:{"id":1660,"username":"2029361"}
+Array
+Usuário criado:{"id":1661,"username":"2138181"}
+Array
+Usuário criado:{"id":1662,"username":"1906582"}
+Array
+Usuário criado:{"id":1663,"username":"1907891"}
+Array
+Usuário criado:{"id":1664,"username":"0414176"}
+Array
+Usuário criado:{"id":1665,"username":"0545432"}
+Array
+Usuário criado:{"id":1666,"username":"0554711"}
+Array
+Usuário criado:{"id":1667,"username":"0555945"}
+Array
+Usuário criado:{"id":1668,"username":"0247062"}
+Array
+Usuário criado:{"id":1669,"username":"0247444"}
+Array
+Usuário criado:{"id":1670,"username":"1907211"}
+Array
+Usuário criado:{"id":1671,"username":"1910181"}
+Array
+Usuário criado:{"id":1672,"username":"1907974"}
+Array
+Usuário criado:{"id":1673,"username":"1908654"}
+Array
+Usuário criado:{"id":1674,"username":"1910412"}
+Array
+Usuário criado:{"id":1675,"username":"1909478"}
+Array
+Usuário criado:{"id":1676,"username":"1909491"}
+Array
+Usuário criado:{"id":1677,"username":"1909321"}
+Array
+Usuário criado:{"id":1678,"username":"1910072"}
+Array
+Usuário criado:{"id":1679,"username":"1900027"}
+Array
+Usuário criado:{"id":1680,"username":"1900073"}
+Array
+Usuário criado:{"id":1681,"username":"1900342"}
+Array
+Usuário criado:{"id":1682,"username":"1901816"}
+Array
+Usuário criado:{"id":1683,"username":"0358979"}
+Array
+Usuário criado:{"id":1684,"username":"0518144"}
+Array
+Usuário criado:{"id":1685,"username":"0518910"}
+Array
+Usuário criado:{"id":1686,"username":"1904230"}
+Array
+Usuário criado:{"id":1687,"username":"1904248"}
+Array
+Usuário criado:{"id":1688,"username":"1900219"}
+Array
+Usuário criado:{"id":1689,"username":"1900246"}
+Array
+Usuário criado:{"id":1690,"username":"1900330"}
+Array
+Usuário criado:{"id":1691,"username":"1901569"}
+Array
+Usuário criado:{"id":1692,"username":"1901794"}
+Array
+Usuário criado:{"id":1693,"username":"1902549"}
+Array
+Usuário criado:{"id":1694,"username":"1902610"}
+Array
+Usuário criado:{"id":1695,"username":"1902710"}
+Array
+Usuário criado:{"id":1696,"username":"1903062"}
+Array
+Usuário criado:{"id":1697,"username":"1903301"}
+Array
+Usuário criado:{"id":1698,"username":"1903428"}
+Array
+Usuário criado:{"id":1699,"username":"1903470"}
+Array
+Usuário criado:{"id":1700,"username":"1903790"}
+Array
+Usuário criado:{"id":1701,"username":"1904061"}
+Array
+Usuário criado:{"id":1702,"username":"1904429"}
+Array
+Usuário criado:{"id":1703,"username":"1908921"}
+Array
+Usuário criado:{"id":1704,"username":"2013094"}
+Array
+Usuário criado:{"id":1705,"username":"2015291"}
+Array
+Usuário criado:{"id":1706,"username":"2016405"}
+Array
+Usuário criado:{"id":1707,"username":"2017341"}
+Array
+Usuário criado:{"id":1708,"username":"2017487"}
+Array
+Usuário criado:{"id":1709,"username":"2017594"}
+Array
+Usuário criado:{"id":1710,"username":"2017979"}
+Array
+Usuário criado:{"id":1711,"username":"2018390"}
+Array
+Usuário criado:{"id":1712,"username":"2018805"}
+Array
+Usuário criado:{"id":1713,"username":"2020973"}
+Array
+Usuário criado:{"id":1714,"username":"2020974"}
+Array
+Usuário criado:{"id":1715,"username":"2022040"}
+Array
+Usuário criado:{"id":1716,"username":"2024347"}
+Array
+Usuário criado:{"id":1717,"username":"0000025230"}
+Array
+Usuário criado:{"id":1718,"username":"0000025370"}
+Array
+Usuário criado:{"id":1719,"username":"0402156"}
+Array
+Usuário criado:{"id":1720,"username":"0448117"}
+Array
+Usuário criado:{"id":1721,"username":"0467742"}
+Array
+Usuário criado:{"id":1722,"username":"0502164"}
+Array
+Usuário criado:{"id":1723,"username":"0531878"}
+Array
+Usuário criado:{"id":1724,"username":"0534098"}
+Array
+Usuário criado:{"id":1725,"username":"0534145"}
+Array
+Usuário criado:{"id":1726,"username":"0539138"}
+Array
+Usuário criado:{"id":1727,"username":"0542609"}
+Array
+Usuário criado:{"id":1728,"username":"0543788"}
+Array
+Usuário criado:{"id":1729,"username":"0552783"}
+Array
+Usuário criado:{"id":1730,"username":"0552896"}
+Array
+Usuário criado:{"id":1731,"username":"0555122"}
+Array
+Usuário criado:{"id":1732,"username":"0563701"}
+Array
+Usuário criado:{"id":1733,"username":"0563719"}
+Array
+Usuário criado:{"id":1734,"username":"0567865"}
+Array
+Usuário criado:{"id":1735,"username":"1805437"}
+Array
+Usuário criado:{"id":1736,"username":"2022812"}
+Array
+Usuário criado:{"id":1737,"username":"0111568"}
+Array
+Usuário criado:{"id":1738,"username":"0168022"}
+Array
+Usuário criado:{"id":1739,"username":"0170403"}
+Array
+Usuário criado:{"id":1740,"username":"0244793"}
+Array
+Usuário criado:{"id":1741,"username":"0278427"}
+Array
+Usuário criado:{"id":1742,"username":"0294440"}
+Array
+Usuário criado:{"id":1743,"username":"0312352"}
+Array
+Usuário criado:{"id":1744,"username":"0379190"}
+Array
+Usuário criado:{"id":1745,"username":"0457525"}
+Array
+Usuário criado:{"id":1746,"username":"0470810"}
+Array
+Usuário criado:{"id":1747,"username":"0535090"}
+Array
+Usuário criado:{"id":1748,"username":"0540130"}
+Array
+Usuário criado:{"id":1749,"username":"0541537"}
+Array
+Usuário criado:{"id":1750,"username":"0543565"}
+Array
+Usuário criado:{"id":1751,"username":"0546498"}
+Array
+Usuário criado:{"id":1752,"username":"0550378"}
+Array
+Usuário criado:{"id":1753,"username":"0556406"}
+Array
+Usuário criado:{"id":1754,"username":"0556658"}
+Array
+Usuário criado:{"id":1755,"username":"0563617"}
+Array
+{Email Inválido: pcbalieiro@gmail.com+"}
+Array
+Usuário criado:{"id":1756,"username":"0565267"}
+Array
+Usuário criado:{"id":1757,"username":"0566957"}
+Array
+Usuário criado:{"id":1758,"username":"1805923"}
+Array
+Usuário criado:{"id":1759,"username":"1900358"}
+Array
+Usuário criado:{"id":1760,"username":"1900435"}
+Array
+Usuário criado:{"id":1761,"username":"1900626"}
+Array
+Usuário criado:{"id":1762,"username":"1900993"}
+Array
+Usuário criado:{"id":1763,"username":"1901093"}
+Array
+Usuário criado:{"id":1764,"username":"1901129"}
+Array
+Usuário criado:{"id":1765,"username":"1901355"}
+Array
+Usuário criado:{"id":1766,"username":"1901686"}
+Array
+Usuário criado:{"id":1767,"username":"1901690"}
+Array
+Usuário criado:{"id":1768,"username":"1902088"}
+Array
+Usuário criado:{"id":1769,"username":"1902115"}
+Array
+Usuário criado:{"id":1770,"username":"1902200"}
+Array
+Usuário criado:{"id":1771,"username":"1902415"}
+Array
+Usuário criado:{"id":1772,"username":"1902934"}
+Array
+Usuário criado:{"id":1773,"username":"1907522"}
+Array
+Usuário criado:{"id":1774,"username":"0236468"}
+Array
+Usuário criado:{"id":1775,"username":"0574527"}
+Array
+Usuário criado:{"id":1776,"username":"1906601"}
+Array
+Usuário criado:{"id":1777,"username":"0557913"}
+Array
+Usuário criado:{"id":1778,"username":"0263092"}
+Array
+Usuário criado:{"id":1779,"username":"0535509"}
+Array
+Usuário criado:{"id":1780,"username":"0574791"}
+Array
+Usuário criado:{"id":1781,"username":"2013392"}
+Array
+Usuário criado:{"id":1782,"username":"2021075"}
+Array
+Usuário criado:{"id":1783,"username":"0000026127"}
+Array
+Usuário criado:{"id":1784,"username":"0477220"}
+Array
+Usuário criado:{"id":1785,"username":"1900407"}
+Array
+Usuário criado:{"id":1786,"username":"1900502"}
+Array
+Usuário criado:{"id":1787,"username":"0467638"}
+Array
+Usuário criado:{"id":1788,"username":"0461118"}
+Array
+Usuário criado:{"id":1789,"username":"2014101"}
+Array
+Usuário criado:{"id":1790,"username":"2014658"}
+Array
+Usuário criado:{"id":1791,"username":"0000025645"}
+Array
+Usuário criado:{"id":1792,"username":"0469833"}
+Array
+Usuário criado:{"id":1793,"username":"0000026069"}
+Array
+Usuário criado:{"id":1794,"username":"0000026257"}
+Array
+Usuário criado:{"id":1795,"username":"0360575"}
+Array
+Usuário criado:{"id":1796,"username":"0478934"}
+Array
+{Email Inválido: amaral_juliane@hotmail.com+"}
+Array
+Usuário criado:{"id":1797,"username":"0490031"}
+Array
+Usuário criado:{"id":1798,"username":"0495032"}
+Array
+Usuário criado:{"id":1799,"username":"0510866"}
+Array
+Usuário criado:{"id":1800,"username":"0549264"}
+Array
+Usuário criado:{"id":1801,"username":"0550667"}
+Array
+Usuário criado:{"id":1802,"username":"0560466"}
+Array
+Usuário criado:{"id":1803,"username":"0574920"}
+Array
+Usuário criado:{"id":1804,"username":"2016583"}
+Array
+Usuário criado:{"id":1805,"username":"0492804"}
+Array
+Usuário criado:{"id":1806,"username":"0000026018"}
+Array
+Usuário criado:{"id":1807,"username":"0000026073"}
+Array
+Usuário criado:{"id":1808,"username":"0000026194"}
+Array
+Usuário criado:{"id":1809,"username":"0228628"}
+Array
+Usuário criado:{"id":1810,"username":"0422728"}
+Array
+Usuário criado:{"id":1811,"username":"0535857"}
+Array
+Usuário criado:{"id":1812,"username":"0548136"}
+Array
+Usuário criado:{"id":1813,"username":"0549707"}
+Array
+Usuário criado:{"id":1814,"username":"0550357"}
+Array
+Usuário criado:{"id":1815,"username":"0551347"}
+Array
+Usuário criado:{"id":1816,"username":"0552289"}
+Array
+Usuário criado:{"id":1817,"username":"0556284"}
+Array
+Usuário criado:{"id":1818,"username":"0557637"}
+Array
+Usuário criado:{"id":1819,"username":"1703684"}
+Array
+Usuário criado:{"id":1820,"username":"1804745"}
+Array
+Usuário criado:{"id":1821,"username":"1900768"}
+Array
+Usuário criado:{"id":1822,"username":"1906705"}
+Array
+Usuário criado:{"id":1823,"username":"1906707"}
+Array
+Usuário criado:{"id":1824,"username":"2023888"}
+Array
+Usuário criado:{"id":1825,"username":"2025002"}
+Array
+Usuário criado:{"id":1826,"username":"0000026356"}
+Array
+Usuário criado:{"id":1827,"username":"0051422"}
+Array
+Usuário criado:{"id":1828,"username":"0103324"}
+Array
+Usuário criado:{"id":1829,"username":"0168911"}
+Array
+Usuário criado:{"id":1830,"username":"0203738"}
+Array
+Usuário criado:{"id":1831,"username":"0211004"}
+Array
+Usuário criado:{"id":1832,"username":"0231533"}
+Array
+Usuário criado:{"id":1833,"username":"0253227"}
+Array
+Usuário criado:{"id":1834,"username":"0314856"}
+Array
+Usuário criado:{"id":1835,"username":"0315502"}
+Array
+Usuário criado:{"id":1836,"username":"0320576"}
+Array
+Usuário criado:{"id":1837,"username":"0329317"}
+Array
+Usuário criado:{"id":1838,"username":"0361749"}
+Array
+Usuário criado:{"id":1839,"username":"0366475"}
+Array
+Usuário criado:{"id":1840,"username":"0397401"}
+Array
+Usuário criado:{"id":1841,"username":"0397677"}
+Array
+Usuário criado:{"id":1842,"username":"0400696"}
+Array
+Usuário criado:{"id":1843,"username":"0402288"}
+Array
+Usuário criado:{"id":1844,"username":"0402329"}
+Array
+Usuário criado:{"id":1845,"username":"0404752"}
+Array
+Usuário criado:{"id":1846,"username":"0406808"}
+Array
+Usuário criado:{"id":1847,"username":"0407480"}
+Array
+Usuário criado:{"id":1848,"username":"0408580"}
+Array
+Usuário criado:{"id":1849,"username":"0408787"}
+Array
+Usuário criado:{"id":1850,"username":"0458971"}
+Array
+Usuário criado:{"id":1851,"username":"0460514"}
+Array
+Usuário criado:{"id":1852,"username":"0465317"}
+Array
+Usuário criado:{"id":1853,"username":"0469324"}
+Array
+Usuário criado:{"id":1854,"username":"0472614"}
+Array
+Usuário criado:{"id":1855,"username":"0475145"}
+Array
+{Email Inválido: \u00a0rogerio_fametro@yahoo.com"}
+Array
+Usuário criado:{"id":1856,"username":"0574925"}
+Array
+Usuário criado:{"id":1857,"username":"1906610"}
+Array
+Usuário criado:{"id":1858,"username":"1906667"}
+Array
+Usuário criado:{"id":1859,"username":"1906687"}
+Array
+Usuário criado:{"id":1860,"username":"1906694"}
+Array
+Usuário criado:{"id":1861,"username":"1906714"}
+Array
+Usuário criado:{"id":1862,"username":"2018266"}
+Array
+Usuário criado:{"id":1863,"username":"2019001"}
+Array
+Usuário criado:{"id":1864,"username":"2021219"}
+Array
+Usuário criado:{"id":1865,"username":"2022020"}
+Array
+Usuário criado:{"id":1866,"username":"2023745"}
+Array
+Usuário criado:{"id":1867,"username":"2024146"}
+Array
+Usuário criado:{"id":1868,"username":"2024559"}
+Array
+Usuário criado:{"id":1869,"username":"2024928"}
+Array
+Usuário criado:{"id":1870,"username":"1805488"}
+Array
+Usuário criado:{"id":1871,"username":"1805492"}
+Array
+Usuário criado:{"id":1872,"username":"1805650"}
+Array
+Usuário criado:{"id":1873,"username":"1805660"}
+Array
+Usuário criado:{"id":1874,"username":"1806147"}
+Array
+Usuário criado:{"id":1875,"username":"1808706"}
+Array
+Usuário criado:{"id":1876,"username":"1808738"}
+Array
+Usuário criado:{"id":1877,"username":"1901491"}
+Array
+Usuário criado:{"id":1878,"username":"1904975"}
+Array
+Usuário criado:{"id":1879,"username":"2015931"}
+Array
+Usuário criado:{"id":1880,"username":"2021451"}
+Array
+Usuário criado:{"id":1881,"username":"2023145"}
+Array
+Usuário criado:{"id":1882,"username":"2027001"}
+Array
+Usuário criado:{"id":1883,"username":"2027340"}
+Array
+Usuário criado:{"id":1884,"username":"2027347"}
+Array
+Usuário criado:{"id":1885,"username":"2027367"}
+Array
+Usuário criado:{"id":1886,"username":"2020467"}
+Array
+Usuário criado:{"id":1887,"username":"2014724"}
+Array
+Usuário criado:{"id":1888,"username":"1908017"}
+Array
+Usuário criado:{"id":1889,"username":"2019904"}
+Array
+Usuário criado:{"id":1890,"username":"1910006"}
+Array
+Usuário criado:{"id":1891,"username":"2028703"}
+Array
+Usuário criado:{"id":1892,"username":"0258600"}
+Array
+Usuário criado:{"id":1893,"username":"2029805"}
+Array
+Usuário criado:{"id":1894,"username":"1907594"}
+Array
+Usuário criado:{"id":1895,"username":"0484002"}
+Array
+Usuário criado:{"id":1896,"username":"0548268"}
+Array
+Usuário criado:{"id":1897,"username":"1910151"}
+Array
+Usuário criado:{"id":1898,"username":"0480444"}
+Array
+Usuário criado:{"id":1899,"username":"0201891"}
+Array
+Usuário criado:{"id":1900,"username":"1704163"}
+Array
+Usuário criado:{"id":1901,"username":"2024842"}
+Array
+Usuário criado:{"id":1902,"username":"2014611"}
+Array
+Usuário criado:{"id":1903,"username":"0068176"}
+Array
+Usuário criado:{"id":1904,"username":"0078317"}
+Array
+Usuário criado:{"id":1905,"username":"0254578"}
+Array
+Usuário criado:{"id":1906,"username":"0314494"}
+Array
+Usuário criado:{"id":1907,"username":"0323490"}
+Array
+Usuário criado:{"id":1908,"username":"0368671"}
+Array
+Usuário criado:{"id":1909,"username":"0397652"}
+Array
+Usuário criado:{"id":1910,"username":"0463930"}
+Array
+Usuário criado:{"id":1911,"username":"0473876"}
+Array
+Usuário criado:{"id":1912,"username":"0490721"}
+Array
+Usuário criado:{"id":1913,"username":"0529170"}
+Array
+Usuário criado:{"id":1914,"username":"0530008"}
+Array
+Usuário criado:{"id":1915,"username":"0539294"}
+Array
+Usuário criado:{"id":1916,"username":"0539671"}
+Array
+Usuário criado:{"id":1917,"username":"0539706"}
+Array
+Usuário criado:{"id":1918,"username":"0540132"}
+Array
+Usuário criado:{"id":1919,"username":"0540259"}
+Array
+Usuário criado:{"id":1920,"username":"0540697"}
+Array
+Usuário criado:{"id":1921,"username":"0541861"}
+Array
+Usuário criado:{"id":1922,"username":"0541900"}
+Array
+Usuário criado:{"id":1923,"username":"0543777"}
+Array
+Usuário criado:{"id":1924,"username":"0544065"}
+Array
+Usuário criado:{"id":1925,"username":"0544658"}
+Array
+Usuário criado:{"id":1926,"username":"0545016"}
+Array
+Usuário criado:{"id":1927,"username":"0546889"}
+Array
+Usuário criado:{"id":1928,"username":"0550193"}
+Array
+Usuário criado:{"id":1929,"username":"0551567"}
+Array
+Usuário criado:{"id":1930,"username":"0556201"}
+Array
+Usuário criado:{"id":1931,"username":"0556329"}
+Array
+Usuário criado:{"id":1932,"username":"0556865"}
+Array
+Usuário criado:{"id":1933,"username":"0560530"}
+Array
+Usuário criado:{"id":1934,"username":"0561005"}
+Array
+Usuário criado:{"id":1935,"username":"0561125"}
+Array
+Usuário criado:{"id":1936,"username":"0561238"}
+Array
+Usuário criado:{"id":1937,"username":"0563229"}
+Array
+Usuário criado:{"id":1938,"username":"0565034"}
+Array
+Usuário criado:{"id":1939,"username":"0565502"}
+Array
+Usuário criado:{"id":1940,"username":"0566361"}
+Array
+Usuário criado:{"id":1941,"username":"0566638"}
+Array
+Usuário criado:{"id":1942,"username":"0567618"}
+Array
+Usuário criado:{"id":1943,"username":"0568665"}
+Array
+Usuário criado:{"id":1944,"username":"0569033"}
+Array
+Usuário criado:{"id":1945,"username":"0569852"}
+Array
+Usuário criado:{"id":1946,"username":"0570659"}
+Array
+Usuário criado:{"id":1947,"username":"0571043"}
+Array
+Usuário criado:{"id":1948,"username":"0571585"}
+Array
+Usuário criado:{"id":1949,"username":"1907119"}
+Array
+Usuário criado:{"id":1950,"username":"1907128"}
+Array
+Usuário criado:{"id":1951,"username":"1907227"}
+Array
+Usuário criado:{"id":1952,"username":"1907469"}
+Array
+Usuário criado:{"id":1953,"username":"1907612"}
+Array
+Usuário criado:{"id":1954,"username":"1908231"}
+Array
+Usuário criado:{"id":1955,"username":"1908285"}
+Array
+Usuário criado:{"id":1956,"username":"1909500"}
+Array
+Usuário criado:{"id":1957,"username":"1909624"}
+Array
+Usuário criado:{"id":1958,"username":"1910904"}
+Array
+Usuário criado:{"id":1959,"username":"0133549"}
+Array
+Usuário criado:{"id":1960,"username":"0141871"}
+Array
+Usuário criado:{"id":1961,"username":"0170130"}
+Array
+Usuário criado:{"id":1962,"username":"0257599"}
+Array
+Usuário criado:{"id":1963,"username":"0275512"}
+Array
+Usuário criado:{"id":1964,"username":"0409652"}
+Array
+Usuário criado:{"id":1965,"username":"0450080"}
+Array
+Usuário criado:{"id":1966,"username":"0462992"}
+Array
+Usuário criado:{"id":1967,"username":"0463065"}
+Array
+Usuário criado:{"id":1968,"username":"0473755"}
+Array
+Usuário criado:{"id":1969,"username":"0504734"}
+Array
+Usuário criado:{"id":1970,"username":"0529289"}
+Array
+Usuário criado:{"id":1971,"username":"0532415"}
+Array
+Usuário criado:{"id":1972,"username":"0533386"}
+Array
+Usuário criado:{"id":1973,"username":"0536584"}
+Array
+Usuário criado:{"id":1974,"username":"0538739"}
+Array
+Usuário criado:{"id":1975,"username":"0540787"}
+Array
+Usuário criado:{"id":1976,"username":"0541474"}
+Array
+Usuário criado:{"id":1977,"username":"0541604"}
+Array
+Usuário criado:{"id":1978,"username":"0542428"}
+Array
+Usuário criado:{"id":1979,"username":"0543552"}
+Array
+Usuário criado:{"id":1980,"username":"0543653"}
+Array
+Usuário criado:{"id":1981,"username":"0544106"}
+Array
+Usuário criado:{"id":1982,"username":"0544193"}
+Array
+Usuário criado:{"id":1983,"username":"0548167"}
+Array
+Usuário criado:{"id":1984,"username":"0551967"}
+Array
+Usuário criado:{"id":1985,"username":"0553493"}
+Array
+Usuário criado:{"id":1986,"username":"0554007"}
+Array
+Usuário criado:{"id":1987,"username":"0554527"}
+Array
+Usuário criado:{"id":1988,"username":"0554826"}
+Array
+Usuário criado:{"id":1989,"username":"0554904"}
+Array
+Usuário criado:{"id":1990,"username":"0556397"}
+Array
+Usuário criado:{"id":1991,"username":"0559714"}
+Array
+Usuário criado:{"id":1992,"username":"0559796"}
+Array
+Usuário criado:{"id":1993,"username":"0560475"}
+Array
+Usuário criado:{"id":1994,"username":"0562241"}
+Array
+Usuário criado:{"id":1995,"username":"0563191"}
+Array
+Usuário criado:{"id":1996,"username":"0563508"}
+Array
+Usuário criado:{"id":1997,"username":"0563598"}
+Array
+Usuário criado:{"id":1998,"username":"0564107"}
+Array
+Usuário criado:{"id":1999,"username":"0564251"}
+Array
+Usuário criado:{"id":2000,"username":"0567259"}
+Array
+Usuário criado:{"id":2001,"username":"0567464"}
+Array
+Usuário criado:{"id":2002,"username":"0569919"}
+Array
+Usuário criado:{"id":2003,"username":"0571069"}
+Array
+Usuário criado:{"id":2004,"username":"1902482"}
+Array
+Usuário criado:{"id":2005,"username":"1908040"}
+Array
+Usuário criado:{"id":2006,"username":"1908193"}
+Array
+Usuário criado:{"id":2007,"username":"1908273"}
+Array
+Usuário criado:{"id":2008,"username":"1908459"}
+Array
+Usuário criado:{"id":2009,"username":"1908813"}
+Array
+Usuário criado:{"id":2010,"username":"1908967"}
+Array
+Usuário criado:{"id":2011,"username":"0521621"}
+Array
+Usuário criado:{"id":2012,"username":"0489676"}
+Array
+Usuário criado:{"id":2013,"username":"0320215"}
+Array
+Usuário criado:{"id":2014,"username":"0542956"}
+Array
+Usuário criado:{"id":2015,"username":"0189834"}
+Array
+Usuário criado:{"id":2016,"username":"0126978"}
+Array
+Usuário criado:{"id":2017,"username":"0311681"}
+Array
+Usuário criado:{"id":2018,"username":"0370549"}
+Array
+Usuário criado:{"id":2019,"username":"1806311"}
+Array
+Usuário criado:{"id":2020,"username":"0405083"}
+Array
+Usuário criado:{"id":2021,"username":"0528167"}
+Array
+Usuário criado:{"id":2022,"username":"2019350"}
+Array
+Usuário criado:{"id":2023,"username":"0250540"}
+Array
+Usuário criado:{"id":2024,"username":"0328038"}
+Array
+Usuário criado:{"id":2025,"username":"0373832"}
+Array
+Usuário criado:{"id":2026,"username":"0391495"}
+Array
+Usuário criado:{"id":2027,"username":"0403129"}
+Array
+Usuário criado:{"id":2028,"username":"0411315"}
+Array
+Usuário criado:{"id":2029,"username":"0414839"}
+Array
+Usuário criado:{"id":2030,"username":"0414968"}
+Array
+Usuário criado:{"id":2031,"username":"0417023"}
+Array
+Usuário criado:{"id":2032,"username":"0420918"}
+Array
+Usuário criado:{"id":2033,"username":"0565801"}
+Array
+Usuário criado:{"id":2034,"username":"0117994"}
+Array
+Usuário criado:{"id":2035,"username":"0153909"}
+Array
+Usuário criado:{"id":2036,"username":"0194467"}
+Array
+Usuário criado:{"id":2037,"username":"0293661"}
+Array
+Usuário criado:{"id":2038,"username":"0343688"}
+Array
+Usuário criado:{"id":2039,"username":"0390240"}
+Array
+Usuário criado:{"id":2040,"username":"0399233"}
+Array
+Usuário criado:{"id":2041,"username":"0405131"}
+Array
+Usuário criado:{"id":2042,"username":"0408927"}
+Array
+Usuário criado:{"id":2043,"username":"0411246"}
+Array
+Usuário criado:{"id":2044,"username":"0417084"}
+Array
+Usuário criado:{"id":2045,"username":"0421860"}
+Array
+Usuário criado:{"id":2046,"username":"0448023"}
+Array
+Usuário criado:{"id":2047,"username":"0448419"}
+Array
+Usuário criado:{"id":2048,"username":"0449513"}
+Array
+Usuário criado:{"id":2049,"username":"0231084"}
+Array
+Usuário criado:{"id":2050,"username":"0232036"}
+Array
+Usuário criado:{"id":2051,"username":"0520821"}
+Array
+Usuário criado:{"id":2052,"username":"0299776"}
+Array
+Usuário criado:{"id":2053,"username":"0512622"}
+Array
+Usuário criado:{"id":2054,"username":"0160267"}
+Array
+Usuário criado:{"id":2055,"username":"0315641"}
+Array
+Usuário criado:{"id":2056,"username":"0334938"}
+Array
+Usuário criado:{"id":2057,"username":"0296432"}
+Array
+Usuário criado:{"id":2058,"username":"0424100"}
+Array
+Usuário criado:{"id":2059,"username":"0464974"}
+Array
+Usuário criado:{"id":2060,"username":"0487141"}
+Array
+Usuário criado:{"id":2061,"username":"0510945"}
+Array
+Usuário criado:{"id":2062,"username":"0519544"}
+Array
+Usuário criado:{"id":2063,"username":"0263834"}
+Array
+Usuário criado:{"id":2064,"username":"0418827"}
+Array
+Usuário criado:{"id":2065,"username":"2029965"}
+Array
+Usuário criado:{"id":2066,"username":"0128029"}
+Array
+Usuário criado:{"id":2067,"username":"0320632"}
+Array
+Usuário criado:{"id":2068,"username":"0408688"}
+Array
+Usuário criado:{"id":2069,"username":"0446163"}
+Array
+Usuário criado:{"id":2070,"username":"0561901"}
+Array
+Usuário criado:{"id":2071,"username":"2029615"}
+Array
+Usuário criado:{"id":2072,"username":"0404637"}
+Array
+Usuário criado:{"id":2073,"username":"0485615"}
+Array
+Usuário criado:{"id":2074,"username":"0167513"}
+Array
+Usuário criado:{"id":2075,"username":"0232030"}
+Array
+Usuário criado:{"id":2076,"username":"0395664"}
+Array
+Usuário criado:{"id":2077,"username":"0467246"}
+Array
+Usuário criado:{"id":2078,"username":"2014671"}
+Array
+Usuário criado:{"id":2079,"username":"2028718"}
+Array
+Usuário criado:{"id":2080,"username":"0557101"}
+Array
+Usuário criado:{"id":2081,"username":"0563363"}
+Array
+Usuário criado:{"id":2082,"username":"2023230"}
+Array
+Usuário criado:{"id":2083,"username":"2024731"}
+Array
+Usuário criado:{"id":2084,"username":"2026938"}
+Array
+Usuário criado:{"id":2085,"username":"0556009"}
+Array
+Usuário criado:{"id":2086,"username":"0547796"}
+Array
+Usuário criado:{"id":2087,"username":"2023421"}
+Array
+Usuário criado:{"id":2088,"username":"1900846"}
+Array
+Usuário criado:{"id":2089,"username":"1806974"}
+Array
+Usuário criado:{"id":2090,"username":"2027888"}
+Array
+Usuário criado:{"id":2091,"username":"1902498"}
+Array
+Usuário criado:{"id":2092,"username":"1909342"}
+Array
+Usuário criado:{"id":2093,"username":"2030436"}

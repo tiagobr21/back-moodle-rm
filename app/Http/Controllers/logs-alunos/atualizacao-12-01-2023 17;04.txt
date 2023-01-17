@@ -5,4 +5,6 @@ Array
 Array
 {Email Inválido: \u00a0rogerio_fametro@yahoo.com"}
 Array
-Usuário criado:{"id":4617,"username":"1902498"}
+Usuário criado:{"id":1595,"username":"0567259"}
+Array
+Usuário criado:{"id":1596,"username":"0414968"}
