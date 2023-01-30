@@ -16,14 +16,18 @@ Route::get('/',function(){
    return view('welcome');
 });
 
-Route::get('/cadastrar',[App\Http\Controllers\ApiRmController::class,'cadastrar']);
+Route::get('/criaralunos',[App\Http\Controllers\ApiRmController::class,'criaralunos']);
 
-Route::get('/consultar',[App\Http\Controllers\ApiRmController::class,'consultar']);
+Route::get('/consultaralunos',[App\Http\Controllers\ApiRmController::class,'consultaralunos']);
 
 Route::get('/excluir/{id}',[App\Http\Controllers\ApiRmController::class,'excluir']);
 
 Route::get('/criarcurso',[App\Http\Controllers\ApiRmController::class,'criarcurso']);
 
-Route::get('/grades',[App\Http\Controllers\GradesMoodleRm::class,'sendGrades']);
+Route::get('/consultcateg',[App\Http\Controllers\ApiRmController::class,'consultcateg']);
+
+// Route::get('/grades',[App\Http\Controllers\GradesMoodleRm::class,'sendGrades']);
+
+Route::get('/grades',[App\Http\Controllers\ApiRmController::class,'grades']);
 
 
