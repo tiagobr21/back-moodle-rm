@@ -613,27 +613,28 @@ public function grades(){
    $response = $response['usergrades'];
    $gradeitems = array();
    $notas = array();
+
+
+   foreach ($response as $key => $value) {
+ /*      array_push($gradeitems,$value['gradeitems']);
+      array_push($gradeitems, $response[$key]['fullname']) ; */
+
+      echo $key;
  
-foreach ($response as $key => $value) {
-      array_push($gradeitems,$value['gradeitems']);
 }
-   
-foreach ($gradeitems as $key => $value){
-      array_push($value[0],$response[$key]['userfullname']);
-      array_push($notas,$value[0]);
-}
-   
-  foreach ($notas as $key => $value){
-      $value['idnumber'] = $value[0];
-      unset($value[0]);
-  
+exit;
+      $notas[3]['idnumber'] = $notas[3][0]; //nome
+      unset($notas[3][0]);
+      
       
    $data = array(
-         "NOTA"=> $value['graderaw']
+         "NOTA"=> $notas[3]['graderaw'],
+         "NOMECIVIL"=> $notas[3]['idnumber'],
+         "DESCPROVA"=>  $notas[3]['itemname']
    );
+
+  
       
-   $data = json_encode($data,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
-   
    //API RM
 
    //GET 
@@ -657,13 +658,15 @@ foreach ($gradeitems as $key => $value){
    curl_close($curl);
 
    $response = json_decode($result,true);
-   
+      
    $response =  $response['data'];
-   
 
 
+    foreach($response as $value){
+       if($value['NOMECIVIL'] == $data['NOMECIVIL'] && $value['DESCPROVA'] == $data['DESCPROVA'] && $value['id'] == '1$_$1$_$1$_$N$_$70913$_$1906793'){
+         
                //PATCH
-   
+           
                   $headers = [
                      'Authorization: Basic '. base64_encode("diploma:F@m3tr022"),
                      'CODCOLIGADA:1',
@@ -671,20 +674,22 @@ foreach ($gradeitems as $key => $value){
                      'CODFILIAL:'.$value['CODFILIAL'],
                      "CODSISTEMA:'G'",
                   ];
-
+                  
+                  
                   $curl = curl_init();
                   curl_setopt_array($curl, [
-                     CURLOPT_URL => 'https://h-tbc.fametro.edu.br/rmsrestdataserver/rest/EduNotasData/1$_$1$_$1$_$N$_$70913$_$1906793',
+                     CURLOPT_URL => 'https://h-tbc.fametro.edu.br/rmsrestdataserver/rest/EduNotasData/'.$value['id'],
                      CURLOPT_CUSTOMREQUEST => 'PATCH',
                      CURLOPT_RETURNTRANSFER => true,
                      CURLOPT_HTTPHEADER => $headers,
-                     CURLOPT_POSTFIELDS => $data
+                     CURLOPT_POSTFIELDS => json_encode($data,JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)
                   ]);
-            
-
          
-   }
-
+       }
+    }
+         
+         
+ 
       
       $result = curl_exec($curl);
 
