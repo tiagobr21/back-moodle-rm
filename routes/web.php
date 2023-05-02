@@ -16,15 +16,25 @@ Route::get('/',function(){
    return view('welcome');
 });
 
-Route::get('/criaralunos',[App\Http\Controllers\ApiRmController::class,'criaralunos']);
+//Route::get('/criaralunos',[App\Http\Controllers\ApiRmController::class,'criaralunos']);
 
 Route::get('/consultaralunos',[App\Http\Controllers\ApiRmController::class,'consultaralunos']);
 
 Route::get('/excluir/{id}',[App\Http\Controllers\ApiRmController::class,'excluir']);
 
-Route::get('/criarcurso',[App\Http\Controllers\ApiRmController::class,'criarcurso']);
+Route::get('/criarcursos',[App\Http\Controllers\ApiRmController::class,'criarcursos']);
 
 Route::get('/consultcateg',[App\Http\Controllers\ApiRmController::class,'consultcateg']);
+
+Route::get('/matricular',[App\Http\Controllers\ApiRmController::class,'matricular']);
+
+Route::get('/deletarcurso',[App\Http\Controllers\FunctionsMdl::class,'deletarcurso']);
+
+Route::get('/criaralunos',[App\Http\Controllers\MdlRM::class,'criaralunos']);
+
+Route::get('/matricularalunos',[App\Http\Controllers\MdlRM::class,'matricularalunos']);
+
+Route::get('/desinscreveralunos',[App\Http\Controllers\MdlRM::class,'desinscreveralunos']);
 
 // Route::get('/grades',[App\Http\Controllers\GradesMoodleRm::class,'sendGrades']);
 

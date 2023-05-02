@@ -9,11 +9,18 @@ use Illuminate\Htpp\Request;
 use Illuminate\Support\Facades\Http;
 
 
+
+
 class ApiRmController extends Controller{    
  
-     public function criaralunos(){
+
+
+
+// Main Functions
+
+public function criaralunos(){
      
-    @set_time_limit(1800);
+    @set_time_limit(2000);
 
      //Api do RM
       
@@ -34,17 +41,17 @@ class ApiRmController extends Controller{
 
      $response_rm = json_decode($result,true);
 
-         
+
         /////////////////////////////////////////////////////////////////////////
 
           foreach ($response_rm as $value_rm){
                
       
-                $remotemoodle="http://localhost:9090/moodle"; 
+                $remotemoodle="http://localhost:9191/moodle"; 
                 $url=$remotemoodle . '/webservice/restjson/server.php?';
 
                 $param_createUser=array();
-                $param_createUser['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+                $param_createUser['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
                 $param_createUser['wsfunction']="core_user_create_users";
                
                 
@@ -128,12 +135,12 @@ class ApiRmController extends Controller{
         @set_time_limit(1800);
         error_reporting(1);
  
-        $remotemoodle="http://localhost:9090/moodle"; 
+        $remotemoodle="http://localhost:9191/moodle"; 
         $url=$remotemoodle . '/webservice/restjson/server.php?';
        
 
         $param =array();
-        $param['wstoken']="a3046418086b61b312a138f4a9910036"; 
+        $param['wstoken']="9649edb002bfda533e816259da2a4836"; 
         $param['wsfunction']="core_user_get_users";
        
         $param['criteria'][0]['key']='';
@@ -149,11 +156,8 @@ class ApiRmController extends Controller{
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $result = curl_exec($ch);
         
-        $response = json_decode( $result,true); 
-        
-        $response_mdl = $response['users'];
-
-        return $response_mdl; 
+      
+        return $result; 
     }
 
 
@@ -164,11 +168,11 @@ class ApiRmController extends Controller{
         @set_time_limit(1800);
         error_reporting(1);
 
-        $remotemoodle="http://localhost:9090/moodle"; 
+        $remotemoodle="http://localhost:9191/moodle"; 
         $url=$remotemoodle . '/webservice/restjson/server.php?';
        
         $param =array();
-        $param ['wstoken']="a3046418086b61b312a138f4a9910036"; 
+        $param ['wstoken']="9649edb002bfda533e816259da2a4836"; 
         $param ['wsfunction']="core_user_delete_users";
        
     
@@ -195,20 +199,20 @@ class ApiRmController extends Controller{
  
 
 
-public function criarcurso(){
+public function criarcursos(){
 
      header("Access-Control-Allow-Origin: *");
      header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
-     @set_time_limit(1800);
+     @set_time_limit(3000);
      error_reporting(1);
       
-     $url = 'http://10.1.0.13:8051/api/framework/v1/consultaSQLServer/RealizaConsulta/disciplinas/0/S';
+     $url = 'https://h-tbc.fametro.edu.br/api/framework/v1/consultaSQLServer/RealizaConsulta/disciplinas/0/S';
      
      $authHeaders = array(
         'login' => 'thiago.souzaa',
         'password' => 'Bondade07!'
      );
-     $authHeaders[] = 'Authorization:Basic dGhpYWdvLnNvdXphYTpCb25kYWRlMDch';
+     $authHeaders[] = 'Authorization:Basic ZGlwbG9tYTpGQG0zdHIwMjI=';
         
      $ch = curl_init();
      curl_setopt($ch, CURLOPT_URL, $url);
@@ -218,9 +222,8 @@ public function criarcurso(){
      $result = curl_exec($ch);
 
      $response = json_decode($result,true);
-     
-
    
+ 
      //Criar Categorias
         
         //COLIGADA
@@ -229,11 +232,11 @@ public function criarcurso(){
 
         
         //url
-        $remotemoodle="http://localhost:9090/moodle"; 
+        $remotemoodle="http://localhost:9191/moodle"; 
         $url=$remotemoodle . '/webservice/restjson/server.php?';
 
         $paramcolig = array();
-        $paramcolig['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramcolig['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramcolig['wsfunction']="core_course_create_categories";
         
         $paramcolig ['categories'][0]['idnumber']= 'C'.$value['CODCOLIGADA'];
@@ -250,12 +253,11 @@ public function criarcurso(){
         $resultcolig = curl_exec($ch);
         $resultcolig = json_decode($resultcolig,true);  
 
-
-       
+ 
        //FILIAL
 
         $paramfilial = array();
-        $paramfilial['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramfilial['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramfilial['wsfunction']="core_course_create_categories";
         
         $paramfilial ['categories'][0]['idnumber']='C'.$value['CODCOLIGADA'].'F'.$value['CODFILIAL'];
@@ -264,7 +266,7 @@ public function criarcurso(){
            // Consultar Categorias Coligada
                 
              $paramconsultafil = array();
-             $paramconsultafil['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+             $paramconsultafil['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
              $paramconsultafil['wsfunction']="core_course_get_categories";
              
              $paramconsultafil['criteria'][0]['key']= 'idnumber';
@@ -280,7 +282,8 @@ public function criarcurso(){
              curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
              $resultconsultafil = curl_exec($ch);
              $consultafil =  json_decode($resultconsultafil,true);
-             
+
+
              foreach( $consultafil as $idnumber){
 
                 if($idnumber['idnumber'] == 'C'.$value['CODCOLIGADA']){
@@ -301,11 +304,11 @@ public function criarcurso(){
         $resultfilial = curl_exec($ch);
         $resultfilial = json_decode($resultfilial,true); 
          
-      
+   
         // NIVEL DE ENSINO
 
         $paramensino = array();
-        $paramensino['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramensino['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramensino['wsfunction']="core_course_create_categories";
         
         $paramensino ['categories'][0]['idnumber']='C'.$value['CODCOLIGADA'].'F'.$value['CODFILIAL'].'E'.$value['CODNIVEL'];
@@ -314,7 +317,7 @@ public function criarcurso(){
            // Consultar Categorias Filial
                 
              $paramconsultaens = array();
-             $paramconsultaens['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+             $paramconsultaens['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
              $paramconsultaens['wsfunction']="core_course_get_categories";
              
              $paramconsultaens['criteria'][0]['key']= 'idnumber';
@@ -356,7 +359,7 @@ public function criarcurso(){
         // CURSO
  
         $paramperiodo = array();
-        $paramperiodo['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramperiodo['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramperiodo['wsfunction']="core_course_create_categories";
         
         $paramperiodo ['categories'][0]['idnumber']='C'.$value['CODCOLIGADA'].'F'.$value['CODFILIAL'].'E'.$value['CODNIVEL'].'-'.$value['CODCURSO'];
@@ -365,7 +368,7 @@ public function criarcurso(){
            // Consultar Categorias Filial
                 
              $paramconsultcurso = array();
-             $paramconsultcurso['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+             $paramconsultcurso['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
              $paramconsultcurso['wsfunction']="core_course_get_categories";
              
              $paramconsultcurso['criteria'][0]['key']= 'idnumber';
@@ -382,6 +385,8 @@ public function criarcurso(){
              $resultconsultaperiodo = curl_exec($ch);
              $consultacurso =  json_decode($resultconsultaperiodo,true);
              
+       
+
              foreach( $consultacurso as $idnumber){
 
                 if($idnumber['idnumber'] == 'C'.$value['CODCOLIGADA'].'F'.$value['CODFILIAL'].'E'.$value['CODNIVEL']){
@@ -407,7 +412,7 @@ public function criarcurso(){
         // PERÍODO LETÍVO
 
         $paramperiodo = array();
-        $paramperiodo['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramperiodo['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramperiodo['wsfunction']="core_course_create_categories";
         
         $paramperiodo ['categories'][0]['idnumber']='C'.$value['CODCOLIGADA'].'F'.$value['CODFILIAL'].'E'.$value['CODNIVEL'].'-'.$value['CODCURSO'].'-'.$value['PERIODO'];
@@ -416,7 +421,7 @@ public function criarcurso(){
            // Consultar Categorias Filial
                 
              $paramconsultperiodo = array();
-             $paramconsultperiodo['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+             $paramconsultperiodo['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
              $paramconsultperiodo['wsfunction']="core_course_get_categories";
              
              $paramconsultperiodo['criteria'][0]['key']= 'idnumber';
@@ -453,11 +458,10 @@ public function criarcurso(){
         $resultperiodo = curl_exec($ch);
         $resultperiodo = json_decode($resultperiodo,true);  
   
-
         // Criar Disciplina
         
         $paramdiscip = array();
-        $paramdiscip['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+        $paramdiscip['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
         $paramdiscip['wsfunction']="core_course_create_courses";
 
         $paramdiscip['courses'][0]['fullname']= $value['DISCIPLINA'];
@@ -467,7 +471,7 @@ public function criarcurso(){
             // Consultar Categorias Filial
                     
             $paramconsultdiscip = array();
-            $paramconsultdiscip['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+            $paramconsultdiscip['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
             $paramconsultdiscip['wsfunction']="core_course_get_categories";
             
             $paramconsultdiscip['criteria'][0]['key']= 'idnumber';
@@ -502,11 +506,12 @@ public function criarcurso(){
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $resultdiscip = curl_exec($ch);
-   
+
         $results[] = [];
         
         array_push($results,$resultdiscip);
     }
+   
 
     
     $responselogs = [];
@@ -515,39 +520,289 @@ public function criarcurso(){
 
     $hoje ='atualizacao-'.date('d-m-Y H;i');
 
-    $file = fopen('C:/Users/tiago.souza/Documents/GitHub/moodle-rm/app/Http/Controllers/logs-cursos/'.$hoje.'.txt','w');
+    $file = fopen('C:/Users/tiago.souza/Documents/Github/moodle-rm/app/Http/Controllers/logs-cursos/'.$hoje.'.txt','w');
     
     foreach ( $results as $key => $value) {
-        
     
         $value = str_replace('exception":"moodle_exception","errorcode":"shortnametaken","message":"Nome breve j\u00e1 \u00e9 usado em um outro curso', "Curso já existe", $value);
         $value = str_replace(']', "", $value); 
         $value = str_replace('[', "Curso criado:", $value); 
-
-        array_push($responselogs,$value);
-
-        if(gettype($value)=='string'){
-          fwrite($file, $value . PHP_EOL);
-        }
+          
+          if(gettype($value) == 'string'){
+            array_push($responselogs, $value);
+            fwrite($file, $value. PHP_EOL);
+          }
        
     }
+
+    $response = response()->json([
+      'logs'=> $responselogs      
+   ]);
+
     fclose($file); 
-
-    return $responselogs;
-         
-
+    return $response;
 
 }
+
+
+
+public function matricular(){
+   
+   @set_time_limit(2000);
+
+   //Alunos RM
+       
+   $url = 'https://h-tbc.fametro.edu.br/api/framework/v1/consultaSQLServer/RealizaConsulta/alunos/0/S';
+     
+   $authHeaders = array(
+      'login' => 'thiago.souzaa',
+      'password' => 'Bondade07!'
+   );
+   
+   $authHeaders[] = 'Authorization:Basic dGhpYWdvLnNvdXphYTpCb25kYWRlMDch';
+        
+   $ch = curl_init();
+   curl_setopt($ch, CURLOPT_URL, $url);
+   curl_setopt($ch, CURLOPT_POST, 0);
+   curl_setopt($ch, CURLOPT_HTTPHEADER, $authHeaders);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   $result = curl_exec($ch);
+
+   $responsealunosrm = json_decode($result,true);
+     
+
+   $alunosMdl= array(
+      'id'=> '',
+      'nome'=> '',
+      'codcoligada'=>'',
+      'codfilial'=>'',
+      'nomefilial'=>'',
+      'nivel_ensino'=>'',
+      'curso'=> '',
+      'periodo'=>'',
+      'disciplina'=>'',
+      'idturma'=>''
+   );
+
+
+   $alunosMdlOrder=[];
+   $alunocurso = [];
+
+
+   foreach( $responsealunosrm as $key => $responsealunoRm){
+   
+      //Alunos Moodle
+      
+      $remotemoodle="http://localhost:9191/moodle";
+      $url=$remotemoodle . '/webservice/restjson/server.php';
+
+      //parametros a ser passado ao webservice
+      $paramcourse=array();
+      $paramcourse['wstoken']="9649edb002bfda533e816259da2a4836"; 
+      $paramcourse['wsfunction']="core_user_get_users_by_field";
+         
+      $paramcourse['field'] = 'username';
+      $paramcourse['values'][0] = $responsealunoRm['RA'];
+
+      //converter array para json
+      $paramjsoncourse = json_encode($paramcourse);
+
+      $ch = curl_init();
+      curl_setopt($ch, CURLOPT_URL, $url);
+      curl_setopt($ch, CURLOPT_POST, 0);
+      curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjsoncourse);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+      $resultenroll = curl_exec($ch);
+      $resultalunosmdl = json_decode($resultenroll,true);
+    
+
+      foreach ($resultalunosmdl as $key => $aluno) {   
+         
+         $alunosMdl['id'] = $aluno['id'];
+         $alunosMdl['nome'] = $aluno['fullname'];
+         $alunosMdl['codcoligada'] = $responsealunoRm['CODCOLIGADA'];
+         $alunosMdl['codfilial'] = $responsealunoRm['CODFILIAL'];
+         $alunosMdl['nomefilial'] = $responsealunoRm['NOMEFILIAL'];
+         $alunosMdl['nivel_ensino'] = $responsealunoRm['NIVEL_ENSINO'];
+         $alunosMdl['curso'] = $responsealunoRm['CURSO'];
+         $alunosMdl['periodo'] = $responsealunoRm['PERIODO'];
+         $alunosMdl['disciplina'] = $responsealunoRm['DISCIPLINA'];
+         $alunosMdl['idturma'] = $responsealunoRm['IDTURMA'];
+      }
+
+      array_push($alunocurso,$alunosMdl); 
+   }
+
+   // Cursos Rm 
+      
+   $url = 'https://h-tbc.fametro.edu.br/api/framework/v1/consultaSQLServer/RealizaConsulta/disciplinas/0/S';
+     
+   $authHeaders = array(
+      'login' => 'thiago.souzaa',
+      'password' => 'Bondade07!'
+   );
+      
+   $authHeaders[] = 'Authorization:Basic ZGlwbG9tYTpGQG0zdHIwMjI=';
+            
+   $ch = curl_init();
+   curl_setopt($ch, CURLOPT_URL, $url);
+   curl_setopt($ch, CURLOPT_POST, 0);
+   curl_setopt($ch, CURLOPT_HTTPHEADER, $authHeaders);
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   $result = curl_exec($ch);
+ 
+   $responsecursosrm = json_decode($result,true);
+   
+
+
+   $cursosaluno[]=[];
+      
+     
+   foreach( $responsecursosrm as $key => $responsecursorm){
+      
+      $shortname = $responsecursorm['CODNIVEL'] . '-' . $responsecursorm['CODCURSO'] . '-' . $responsecursorm['IDTURMA'];
+
+      //Cursos Moodle
+
+      $remotemoodle="http://localhost:9191/moodle";
+      $url=$remotemoodle .'/webservice/restjson/server.php';
+   
+      //parametros a ser passado ao webservice
+      $paramcourse=array();
+      $paramcourse['wstoken']="9649edb002bfda533e816259da2a4836"; 
+      $paramcourse['wsfunction']="core_course_get_courses_by_field";
+         
+      $paramcourse['field'] = 'shortname';
+      $paramcourse['value'] = $shortname;
+
+      //converter array para json
+      $paramjsoncourse = json_encode($paramcourse);
+   
+         $ch = curl_init();
+         curl_setopt($ch, CURLOPT_URL, $url);
+         curl_setopt($ch, CURLOPT_POST, 0);
+         curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjsoncourse);
+         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   
+         $result = curl_exec($ch);
+         $resultcourse = json_decode($result,true);
+         array_push($cursosaluno,$resultcourse['courses']);
+ 
+      }
+
+
+      $idturma = '';
+      $alunosmatriculados = array();
+
+
+      foreach ($cursosaluno as $value) {
+        
+         foreach ($value as $curso) {
+          
+            foreach ($alunocurso as  $aluno) {
+
+               $idturma = substr($curso['idnumber'],13,20);    
+
+               $key1 = array_search($aluno['disciplina'],$curso);
+
+               if( $key1 ){
+                  
+                  $idturmaaluno = $aluno['periodo'].'-'.$aluno['idturma'];
+
+                  if($idturmaaluno  == $idturma){
+               
+                     array_push($alunosmatriculados,$aluno);
+                  
+                       // Matricula
+                  
+                        $remotemoodle="http://localhost:9191/moodle";
+                        $url=$remotemoodle . '/webservice/restjson/server.php';
+            
+                        //parametros a ser passado ao webservice
+                        $paramenroll=array();
+                        $paramenroll['wstoken']="9649edb002bfda533e816259da2a4836"; 
+                        $paramenroll['wsfunction']="enrol_manual_enrol_users";
+                                    
+                        $paramenroll['enrolments'][0]['roleid']= 5; 
+                        $paramenroll['enrolments'][0]['userid']= $aluno['id'];
+                        $paramenroll['enrolments'][0]['courseid']= $curso['id'];
+                        $paramenroll['enrolments'][0]['timestart']= time(); 
+            
+                        //converter array para json
+                        $paramjsonenroll = json_encode($paramenroll);
+            
+                        $ch = curl_init();
+                        curl_setopt($ch, CURLOPT_URL, $url);
+                        curl_setopt($ch, CURLOPT_POST, 0);
+                        curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjsonenroll);
+                        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            
+                        $resultenroll = curl_exec($ch);  
+                  
+                  }         
+               }
+            } 
+         }
+      }
+     
+   
+
+    //Configurações para a criação do arquivo .txt
+
+    // Obter a configuração de data/tempo de Manaus
+    date_default_timezone_set('America/Manaus');
+    
+    // Data e hora 
+    $hoje ='atualizacao-'.date('d-m-Y H;i');
+
+    // Diretório onde será salvo os .txt  
+    $file = fopen('C:/Users/tiago.souza/Documents/Github/moodle-rm/app/Http/Controllers/logs-matriculados/'.$hoje.'.txt','w');
+    
+
+          if($resultenroll == 'null'){
+
+            foreach ($alunosmatriculados as $key => $value) {
+               
+               // Resposta que será exibida no .txt
+               $log = 'Aluno(a) '.$value['nome'].' foi matriculado no curso '.$value['disciplina'].' '.$value['periodo'].'-'.$value['idturma'].' com sucesso';
+          
+               
+               fwrite($file, $log. PHP_EOL);
+            }
+         
+          }else{
+            return response()->json([
+             "message"=> "Algo deu errado tente novamente"
+            ]);
+          }
+    
+          fclose($file); 
+
+
+       $responselogs = response()->json([
+            'message'=>[
+               'alunos matriculados em suas respectivas turmas'=> $alunosmatriculados
+               ]
+         ]);
+
+         return $responselogs; 
+}  
+    
+
 
     
 public function consultcateg(){
     // Consultar Categorias 
 
-    $remotemoodle="http://localhost:9090/moodle"; 
+    $remotemoodle="http://localhost:9191/moodle"; 
     $url=$remotemoodle . '/webservice/restjson/server.php?';
            
     $paramconsulta = array();
-    $paramconsulta['wstoken']="a3046418086b61b312a138f4a9910036"; //token de acesso ao webservice
+    $paramconsulta['wstoken']="9649edb002bfda533e816259da2a4836"; //token de acesso ao webservice
     $paramconsulta['wsfunction']="core_course_get_categories";
     
     $paramconsulta['criteria'][0]['key']= 'idnumber';
@@ -565,17 +820,6 @@ public function consultcateg(){
     $consulta =  json_decode($resultconsulta,true);
     
 
-    foreach( $consulta as $value){
-
-      if($value['idnumber'] == 'C1F1E1'){
-          $id = $value['id'];
-      }
-
-  
-     }
-     
-     echo $id; 
-
 }
 
 public function grades(){
@@ -587,12 +831,12 @@ public function grades(){
    error_reporting(1);
 
 
-   $remotemoodle="http://localhost:9090/moodle"; 
+   $remotemoodle="http://localhost:9191/moodle"; 
    $url=$remotemoodle . '/webservice/restjson/server.php?';
 
 
    $param=array();
-   $param['wstoken']="a3046418086b61b312a138f4a9910036";
+   $param['wstoken']="9649edb002bfda533e816259da2a4836";
    $param['wsfunction']="gradereport_user_get_grade_items";
    
  
