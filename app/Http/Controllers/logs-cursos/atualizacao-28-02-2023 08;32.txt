@@ -1,0 +1,3 @@
+Curso criado:{"id":12,"shortname":"1-MED01-127144"}
+Curso criado:{"id":13,"shortname":"1-MED01-127147"}
+Curso criado:{"id":14,"shortname":"1-MED01-127150"}
