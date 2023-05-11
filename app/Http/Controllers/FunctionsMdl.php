@@ -18,7 +18,7 @@ public function deletarcurso(){
 
     foreach ($ids as $key => $value) {
                 $remotemoodle='https://digital.fametro.edu.br'; 
-                $url=$remotemoodle . '/webservice/restjson/server.php?';
+                $url=$remotemoodle . '/webservice/restjson/server.php';
  
                 $param=array();
                 $param['wstoken']="27f18ecb5d6bcbb9d0c4a51ffd1ad7ce"; //token de acesso ao webservice
@@ -34,6 +34,7 @@ public function deletarcurso(){
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjson);
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
                 $result= curl_exec($ch);
             
              }
@@ -65,6 +66,7 @@ public function deletarcurso(){
                     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                     $response = curl_exec($ch);
+
                     $responseenrolled = json_decode($response,true);
                     
            

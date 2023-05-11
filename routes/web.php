@@ -30,11 +30,15 @@ Route::get('/matricular',[App\Http\Controllers\ApiRmController::class,'matricula
 
 Route::get('/deletarcurso',[App\Http\Controllers\FunctionsMdl::class,'deletarcurso']);
 
-Route::get('/criaralunos',[App\Http\Controllers\MdlRM::class,'criaralunos']);
+Route::get('/criaralunos',[App\Http\Controllers\IntegracaoAva::class,'criaralunos']);
 
-Route::get('/matricularalunos',[App\Http\Controllers\MdlRM::class,'matricularalunos']);
+Route::get('/matricularalunos',[App\Http\Controllers\IntegracaoAva::class,'matricularalunos']);
 
-Route::get('/desinscreveralunos',[App\Http\Controllers\MdlRM::class,'desinscreveralunos']);
+Route::get('/desinscreveralunos',[App\Http\Controllers\IntegracaoAva::class,'desinscreveralunos']);
+
+Route::get('/criarcursos',[App\Http\Controllers\IntegracaoAva::class,'criarcursos']);
+
+Route::get('/criarprofessor',[App\Http\Controllers\IntegracaoAva::class,'criarprofessor']);
 
 // Route::get('/grades',[App\Http\Controllers\GradesMoodleRm::class,'sendGrades']);
 
