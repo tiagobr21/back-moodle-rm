@@ -30,7 +30,7 @@ class IntegracaoAva extends Controller
 
          $responsealunosrm = json_decode($responserm,true);
 
-        //  dd($responsealunosrm);
+          dd($responsealunosrm);
   
          
          // MDL
