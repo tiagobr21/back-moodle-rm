@@ -30,7 +30,7 @@ class IntegracaoAva extends Controller
 
          $responsealunosrm = json_decode($responserm,true);
 
-          dd($responsealunosrm);
+         //dd($responsealunosrm);
   
          
          // MDL
@@ -125,7 +125,7 @@ public function matricularalunos(){
 
       $responsealunosrm = json_decode($responserm,true); //Alunos do Rm 
 
-      dd($responsealunosrm);  
+    //    dd($responsealunosrm); 
 
 
       foreach ($responsealunosrm as $key => $value) {
@@ -138,7 +138,7 @@ public function matricularalunos(){
         'wsfunction' => 'core_course_get_courses_by_field',
         'moodlewsrestformat'=>'json',
         'field'=> 'id',
-        'value'=> $value["IDMDL"],
+        'value'=> $value["IDMDL"]
 
         );
 
@@ -154,6 +154,8 @@ public function matricularalunos(){
 
 
         $responsecourse = $response['courses'];
+
+        // dd($responsecourse);
 
 
         //    echo '<pre>';
@@ -237,6 +239,8 @@ public function matricularalunos(){
 
 public function desinscreveralunos(){
 
+    set_time_limit(3000);
+
     //RM 
 
     $url = 'https://h-tbc.fametro.edu.br/api/framework/v1/consultaSQLServer/RealizaConsulta/desinscralunomdl/0/S';
@@ -256,6 +260,8 @@ public function desinscreveralunos(){
     $responserm = curl_exec($ch);
     
     $responsealunosrm = json_decode($responserm,true); 
+
+    // dd($responsealunosrm);
     
  
     if($responsealunosrm == []){
@@ -288,10 +294,11 @@ public function desinscreveralunos(){
         
             $responseenrolled = json_decode($result,true); // Alunos Matriculados do Moodle
 
-            // dd($responseenrolled);
+            echo '<pre>';
+            print_r($responseenrolled);
+            echo '</pre>';
 
-            $usernamemdl = array_column($responseenrolled,'username','id');
-            
+            /* $usernamemdl = array_column($responseenrolled,'username','id');
             
             
             if(in_array($value['RA'],$usernamemdl)){
@@ -331,7 +338,7 @@ public function desinscreveralunos(){
                 echo '</pre>';  
             
              }
-        }
+        } */
 
         
     
@@ -375,59 +382,55 @@ public function desinscreveralunos(){
         foreach ($responsecoursesrm as $key => $value) {
 
             //Get Category
+  
+            $url= 'https://avapos.fametro.edu.br/webservice/rest/server.php';
+            $token = '68bc649ff1bd5459da65722dd1a9fc13';
 
-            $remotemoodle="https://avapos.fametro.edu.br";
-            $url=$remotemoodle .'/webservice/restjson/server.php';
-                                        
-            $paramcategory = array();
-            $paramcategory['wstoken']="9649edb002bfda533e816259da2a4836"; 
-            $paramcategory['wsfunction']="core_course_get_categories";
+            $param =array(
+              'wstoken'=> $token,
+              'wsfunction'=>'core_course_get_categories',
+              'moodlewsrestformat'=>'json',
+              'criteria[0][key]'=> 'idnumber', 
+              'criteria[0][value]'=> $value['CATEGORY_IDNUMBER']
+            );
             
-            $paramcategory['criteria'][0]['key']= 'idnumber';
-            $paramcategory['criteria'][0]['value']= $value['CATEGORY_IDNUMBER'];
-    
-            $paramjsoncategory = json_encode($paramcategory);
-                    
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_POST, 0);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjsoncategory);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($param));
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            $resultcategory = curl_exec($ch);
-            $responsecategory =  json_decode($resultcategory,true);
+            $result = curl_exec($ch);
+            curl_close($ch);      
 
-            // dd( $responsecategory[0]['id']);
+            $responsecategory = json_decode($result,true);
+
+            // dd($responsecategory);
 
  
             //Create Course
 
-            $remotemoodle="https://avapos.fametro.edu.br";
-            $url=$remotemoodle .'/webservice/restjson/server.php';
-                                        
-            $param=array();
-            $param['wstoken']="9649edb002bfda533e816259da2a4836"; 
-            $param['wsfunction']="core_course_create_courses";
-                            
-            $param['courses'][0]['fullname']= $value['FULLNAME'];
-            $param['courses'][0]['shortname']= $value['SHORTNAME'];
-            $param['courses'][0]['categoryid']= $responsecategory[0]['id'];
-
-                                
-            $paramjson = json_encode($param);
+            $url = "https://avapos.fametro.edu.br/webservice/restjson/server.php";
+            $token = "68bc649ff1bd5459da65722dd1a9fc13";
+     
+            $param = array(
+                'wstoken' => $token,
+                'wsfunction'=>'core_course_create_courses',
+                'moodlewsrestformat'=>'json',
+                'courses[0][fullname]'=> $value['FULLNAME'],
+                'courses[0][shortname]'=> $value['SHORTNAME'],
+                'courses[0][categoryid]'=>$responsecategory[0]['id']
+            );
 
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_POST, 0);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $paramjson);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($param));
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $result = curl_exec($ch);
-            $responsecoursesmdl = json_decode($result,true);
-
-            $response = [];
-
-            array_push($response,$responsecoursesmdl);
+            curl_close($ch);  
+            
+            
+            $response = json_decode($result,true);
             
             echo '<pre>';
             print_r($response);
